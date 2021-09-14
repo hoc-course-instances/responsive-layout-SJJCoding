@@ -21,7 +21,7 @@ h1 {
 }
 
 .row {
-     display: flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -34,18 +34,34 @@ h1 {
 }
 
 .hero {
+    display: flex;
     padding: 100px 0;
     background-color: #23424A;
     color: #FFF;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.hero__text { 
+.hero__text ,
+.content_text{ 
+    width: 62%;
+}
+
+.hero__img ,
+.sidebar{ 
+    width: 32%;
+}
+
+img {
+    max-width: 100%;
 }
 
 .hero__img {
+
 }
-.hero p {
+.sidebar p {
     margin-bottom: 3em;
+    max-width: 80%;
 }
 
 .btn {
@@ -63,3 +79,25 @@ h1 {
 .btn:focus {
     opacity: .75; 
 }
+
+.col + .col {
+    margin-left:30px;
+ }
+
+.sidebar {
+    text-align: center;
+    color: white;
+    background-color: #136C72;
+    padding: 20px;
+
+}
+
+.bottom_section {
+    margin-top: 20px;
+}
+
+.content_text h2 {
+  
+    margin-top: 0px;
+}
+
