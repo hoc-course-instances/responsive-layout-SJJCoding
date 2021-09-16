@@ -146,3 +146,17 @@ header {
     color: #fff;
     background-color: #136c72;
 }
+
+@media only screen and (max-width: 900px) {
+    .nav, .row {
+        flex-direction: column;
+    }
+    .sidebar, .primary-content {
+        width: auto;
+    }
+
+    .nav__item + .nav__item {
+        margin-right: 20px;
+    }
+
+}

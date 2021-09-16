@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Poppins, "Roboto", sans-serif;
   font-size: 1.3rem;
 }
 
@@ -180,4 +180,27 @@ header {
   .sidebar {
     width: 32%;
   }
+
+  .nav__list, nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0px;
+  }
+
+  .nav__link {
+    justify-content: space-around;
+  }
+
+  li a{
+    margin: 0px 14px;
+    color: white;
+  }
+
+  a:hover {
+    opacity: 50%;
+  }
+
+
 }
